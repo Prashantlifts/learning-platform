@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning Platform</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Navigation Styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container for page sections */
+        .container {
+            padding: 20px;
+        }
+
+        /* Introduction Section */
+        .intro {
+            background-color: #f4f4f4;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .intro h2 {
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Featured Courses Section */
+        .courses-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            padding: 40px;
+            background-color: #fafafa;
+        }
+
+        .course-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .course-card h3 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .course-card p {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .course-card button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .course-card button:hover {
+            background-color: #45a049;
+        }
+
+        /* Why Choose Us Section */
+        .why-choose-us {
+            background-color: #4CAF50;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .why-choose-us h2 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .why-choose-us p {
+            font-size: 1.2em;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .how-it-works h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .step {
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            padding: 30px;
+            width: 25%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .step:hover {
+            transform: translateY(-10px);
+        }
+
+        .step h3 {
+            color: #4CAF50;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .step p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1.1em;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .courses-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .steps {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .step {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to LearnOnline</h1>
+        <p>Your gateway to knowledge and growth</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="courses.html">Courses</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="enroll.html">Enroll Now</a>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Introduction Section -->
+        <section class="intro">
+            <h2>Start Your Learning Journey Today!</h2>
+            <p>At LearnOnline, we provide world-class courses in various fields to help you build new skills, advance your career, or even change your career path. We offer flexible learning options with experienced instructors, interactive content, and a supportive community to help you succeed.</p>
+        </section>
+
+        <!-- Featured Courses Section -->
+        <section class="courses-section">
+            <div class="course-card">
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS, and JavaScript to build stunning websites. Start from scratch and master modern web development techniques.</p>
+                <a href="courses.html#web-development"><button>Enroll Now</button></a>
+            </div>
+            <div class="course-card">
+                <h3>Data Science</h3>
+                <p>Master data analysis, machine learning, and Python. Unlock the power of data to make impactful decisions in business and research.</p>
+                <a href="courses.html#data-science"><button>Enroll Now</button></a>
+            </div>
+            <div class="course-card">
+                <h3>Graphic Design</h3>
+                <p>Unleash your creativity and learn how to create compelling visuals using tools like Photoshop, Illustrator, and more.</p>
+                <a href="courses.html#graphic-design"><button>Enroll Now</button></a>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us">
+            <h2>Why Choose LearnOnline?</h2>
+            <p>Our platform offers a unique and flexible way to learn. With personalized learning paths, interactive content, and 24/7 access to materials, we ensure that your learning journey is smooth and successful. Join us and start achieving your goals today!</p>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>Choose a Course</h3>
+                    <p>Select a course that aligns with your interests or career goals. We have courses for beginners to advanced learners.</p>
+                    <a href="courses.html"><button>Browse Courses</button></a>
+                </div>
+                <div class="step">
+                    <h3>Learn at Your Own Pace</h3>
+                    <p>Our courses are designed for flexibility, allowing you to learn at your own pace and on your own schedule.</p>
+                    <a href="enroll.html"><button>Start Now</button></a>
+                </div>
+                <div class="step">
+                    <h3>Get Certified</h3>
+                    <p>Upon completing a course, you'll receive a certificate that you can proudly showcase on your resume or LinkedIn.</p>
+                    <a href="testimonials.html"><button>See Success Stories</button></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 LearnOnline. All rights reserved.</p>
+    </footer>
+</body>
+</html>
